@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Nombre del proyecto: LucasMap
+    Autores: Leonardo Duarte, Lucas Baruja, Iván Samudio, Ezequiel Arce
+    Descripción: Layout XML para la pantalla "Acerca de" que muestra la versión de la aplicación, desarrolladores y fecha de lanzamiento. Incluye un botón para volver al menú principal.
+    Fecha de creación: 24/10/2024
+    Forma de utilizar: Este archivo define la interfaz de usuario para la pantalla "Acerca de", con textos descriptivos y un botón de navegación.
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/about"
+        android:textSize="24sp"
+        android:textColor="@color/my_dark_primary"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/version"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/developers"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/launch_date"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="32dp" />
+
+    <!-- Botón para volver al menú principal -->
+    <Button
+        android:id="@+id/buttonBackToMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/back_menu"
+        android:backgroundTint="@color/my_dark_primary"
+        android:textColor="@android:color/white" />
+</LinearLayout>

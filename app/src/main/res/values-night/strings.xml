@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Nombre del proyecto: LucasMap
+    Autores: Leonardo Duarte, Lucas Baruja, Iván Samudio, Ezequiel Arce
+    Descripción: Archivo de recursos que contiene todas las cadenas de texto utilizadas en la aplicación, para permitir fácil localización y cambios de idioma.
+    Fecha de creación: 24/10/2024
+    Forma de utilizar: Define todos los textos visibles en la interfaz de usuario mediante identificadores, evitando la codificación en duro de textos en los layouts.
+-->
+
+<resources>
+    <string name="distancia_total">Distancia total:</string>
+    <string name="movimientos_bruscos">Movimientos bruscos:</string>
+    <string name="velocidad_promedio">Velocidad promedio:</string>
+</resources>

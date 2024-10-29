@@ -1,0 +1,30 @@
+<!--
+    Nombre del proyecto: LucasMap
+    Autores: Leonardo Duarte, Lucas Baruja, Iván Samudio, Ezequiel Arce
+    Descripción: Archivo de recursos que define los temas de la aplicación, incluyendo estilos de colores, fondos y configuraciones de apariencia para proporcionar una experiencia visual consistente.
+    Fecha de creación: 24/10/2024
+    Forma de utilizar: Define el tema base y los temas específicos de la aplicación, que se aplican a todas las actividades y componentes de la interfaz de usuario.
+-->
+
+
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.TP2" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Personalización del tema claro. -->
+        <item name="colorPrimary">@color/my_light_primary</item>
+    </style>
+
+    <!-- Tema principal de la aplicación -->
+    <style name="Theme.TP2" parent="Base.Theme.TP2">
+        <item name="colorPrimary">@color/my_light_primary</item>
+        <item name="colorPrimaryDark">@color/my_dark_primary</item>
+        <item name="colorAccent">@color/my_accent_color</item>
+    </style>
+
+    <!-- SplashTheme para la pantalla inicial -->
+    <style name="SplashTheme" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Fondo del SplashScreen y color de la barra de estado -->
+        <item name="android:windowBackground">@color/splashBackgroundColor</item>
+        <item name="android:statusBarColor">@color/statusBarColor</item>
+    </style>
+</resources>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Nombre del proyecto: LucasMap
+    Autores: Leonardo Duarte, Lucas Baruja, Iván Samudio, Ezequiel Arce
+    Descripción: Layout XML para la pantalla de resumen de actividad, que muestra los resultados finales de la actividad.
+    Fecha de creación: 24/10/2024
+    Forma de utilizar: Presenta el resumen de la actividad y permite volver al menú principal o al mapa.
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <!-- Título de felicitación -->
+    <TextView
+        android:id="@+id/textViewCongrats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/congrats_message"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Distancia total -->
+    <TextView
+        android:id="@+id/textViewDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/distancia_total"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Movimientos bruscos -->
+    <TextView
+        android:id="@+id/textViewMovements"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/movimientos_bruscos"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Velocidad promedio -->
+    <TextView
+        android:id="@+id/textViewSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/velocidad_promedio"
+        android:textSize="18sp"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Botón para volver al mapa -->
+    <Button
+        android:id="@+id/buttonBackToMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_back_to_map" />
+
+    <!-- Botón para volver al menú principal -->
+    <Button
+        android:id="@+id/buttonBackToMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_volver_menu"
+        android:backgroundTint="@color/my_accent_color"
+        android:textColor="@color/black" />
+</LinearLayout>

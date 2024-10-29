@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Nombre del proyecto: LucasMap
+    Autores: Leonardo Duarte, Lucas Baruja, Iván Samudio, Ezequiel Arce
+    Descripción: Layout XML para la pantalla de estadísticas, que muestra el resumen de actividad registrada.
+    Fecha de creación: 24/10/2024
+    Forma de utilizar: Define la interfaz de usuario para mostrar estadísticas de distancia, velocidad y movimientos bruscos.
+-->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityStats">
+
+</androidx.constraintlayout.widget.ConstraintLayout>

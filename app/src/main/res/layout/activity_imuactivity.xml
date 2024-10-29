@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Nombre del proyecto: LucasMap
+    Autores: Leonardo Duarte, Lucas Baruja, Iván Samudio, Ezequiel Arce
+    Descripción: Layout XML para la pantalla de datos IMU, que muestra la información del sensor de movimiento y un botón para regresar al menú principal.
+    Fecha de creación: 24/10/2024
+    Forma de utilizar: Define la interfaz de usuario de la pantalla IMU, con datos de sensor y un botón para navegación.
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <!-- Texto que muestra los datos del acelerómetro -->
+    <TextView
+        android:id="@+id/sensorDataTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/acelerometro_text"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Botón para volver al menú principal -->
+    <Button
+        android:id="@+id/buttonBackToMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/back_menu"
+        android:backgroundTint="@color/my_dark_primary"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

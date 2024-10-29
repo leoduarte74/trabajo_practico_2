@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Nombre del proyecto: LucasMap
+    Autores: Leonardo Duarte, Lucas Baruja, Iván Samudio, Ezequiel Arce
+    Descripción: Layout XML para el menú principal, que permite navegar a diferentes secciones de la aplicación.
+    Fecha de creación: 24/10/2024
+    Forma de utilizar: Presenta opciones de navegación para acceder al mapa, información IMU, información GNSS y pantalla "Acerca de".
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal"
+    android:background="@color/white">
+
+    <!-- Texto superior centrado -->
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_text"
+        android:textSize="24sp"
+        android:textColor="@color/my_dark_primary"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Logo centrado -->
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/logo"
+        android:contentDescription="@string/app_name"
+        android:layout_marginBottom="32dp" />
+
+    <!-- Contenedor de botones en la parte inferior -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="24dp">
+
+        <!-- Botón para ir al mapa -->
+        <Button
+            android:id="@+id/buttonMap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_map"
+            android:backgroundTint="@color/my_dark_primary"
+            android:textColor="@color/white"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Botón para información IMU -->
+        <Button
+            android:id="@+id/buttonIMU"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_imu"
+            android:backgroundTint="@color/my_dark_primary"
+            android:textColor="@color/white"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Botón para información GNSS -->
+        <Button
+            android:id="@+id/buttonGNSS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_gnss"
+            android:backgroundTint="@color/my_dark_primary"
+            android:textColor="@color/white"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Botón para ir a Acerca de -->
+        <Button
+            android:id="@+id/buttonAbout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_about"
+            android:backgroundTint="@color/my_dark_primary"
+            android:textColor="@color/white"
+            android:layout_marginBottom="8dp" />
+    </LinearLayout>
+
+</LinearLayout>

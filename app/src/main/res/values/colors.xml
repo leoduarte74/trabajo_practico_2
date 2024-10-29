@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Nombre del proyecto: LucasMap
+    Autores: Leonardo Duarte, Lucas Baruja, Iván Samudio, Ezequiel Arce
+    Descripción: Archivo de recursos que define los colores utilizados en la aplicación para mantener consistencia en el diseño.
+    Fecha de creación: 24/10/2024
+    Forma de utilizar: Contiene definiciones de colores que se pueden utilizar en diferentes layouts y estilos de la aplicación.
+-->
+
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="route_color">#FF0000</color>
+    <color name="button_color">#3F51B5</color>
+    <color name="button_color_alt">#4CAF50</color>
+    <color name="splashBackgroundColor">#FF4A4A</color>
+    <color name="statusBarColor">#D32F2F</color>
+
+    <!-- Colores principales para el tema -->
+    <color name="my_light_primary">#FF4A4A</color>
+    <color name="my_dark_primary">#D32F2F</color>
+    <color name="my_accent_color">#FFFFFF</color>
+</resources>
