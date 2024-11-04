@@ -23,6 +23,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class MainMenuActivity extends AppCompatActivity {
 
     private MediaPlayer mediaPlayer;
+    private static boolean mensajeMostrado = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,8 +35,11 @@ public class MainMenuActivity extends AppCompatActivity {
         mediaPlayer.setLooping(true); // Hace que la música se repita
         mediaPlayer.start();
 
-        // VERIFICAR LA DISPONIBILIDAD DE LOS SENSORES IMU Y GNSS
-        verificarSensores();
+        // VERIFICAR LA DISPONIBILIDAD DE LOS SENSORES IMU Y GNSS SOLO UNA VEZ
+        if (!mensajeMostrado) {
+            verificarSensores();
+            mensajeMostrado = true;
+        }
 
         // BOTÓN PARA IR A LA PANTALLA DE MAPA
         Button buttonMap = findViewById(R.id.buttonMap);
